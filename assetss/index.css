@@ -3,6 +3,7 @@
     font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
     
+    
 }
 #header{
     width: 100vw;
@@ -14,6 +15,7 @@
     height: 10%;
     text-align: center;
     border-bottom: 3px solid black;
+   
     
 }
 
@@ -22,6 +24,59 @@
     justify-content: center;
     margin-top: 3%;
 }
+.width{
+    display: none;
+    padding-bottom: 10px;
+}
+.width i{
+    font-size: 40px;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+
+}
+
+@media screen and (max-width: 720px){
+    .about-img{
+        float: none;
+        overflow: hidden;
+    }
+    
+    .image{
+        float: none;
+    }
+    #header-1{
+        height: 100vh;
+    }
+    #about{
+        height: 100vh;
+    }
+    .nav-list{
+        display: none;
+
+    }
+   .width{
+       display: block;
+   }
+    .nav{
+        margin-bottom: 2%;
+    }
+    .firstdiv{
+        width: 80vw;
+        height: 100vh;
+        padding: none;
+    }
+    .contain {
+        display: none;
+    }
+    .contain1{
+        display: none;
+    }
+    
+    
+}
 
 .nav-list li{
     list-style-type: none;
@@ -29,12 +84,16 @@
 }
 .nav-list li a{
     text-decoration: none;
-    color: white;
+    
     transition: border-bottom 0.5s ease-in;
     -webkit-transition:border-bottom .5s;
     -moz-transition:border-bottom .5s;
     -ms-transition:border-bottom .5s;
      -o-transition:border-bottom .5s;
+     background: -webkit-linear-gradient(#f12711,#f5af19);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
     
 
     
@@ -50,26 +109,45 @@
     border-bottom: 2px solid white;
     color: orange;
 }
+.navv{
+    text-align: center;
+}
+.nav-lists{
+    display: none;
+    text-align: center;
+}
+.nav-lists li a{
+    text-decoration: none;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px 0;
+    
+}
+.nav-lists li{
+    list-style-type: none;
+}
 
 @keyframes width{
-    0%{top: 0}
+    0%{top: 50%}
 
-    50%{top: 50%;}
+    50%{top: 0;}
     
     75%{bottom: 0;}
     100%{top: 50%;}
 }
 @keyframes breadth{
-    0%{bottom: 0}
+    0%{top: 0}
     
     50%{top: 50%;}
     
-    75%{top: 0;}
-    100%{top: 50%;}
+    75%{bottom: 0;}
+    100%{top: 0;}
 }
 
-.header-1{
-    height: 70vh;
+#header-1{
+    height: 100vh;
     width: 100vw;
     position: relative;
     border-bottom: 3px solid black;
@@ -97,38 +175,91 @@
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     height:200px;
-    width: 200px
+    width: 200px;
+    opacity: 0.5;
+   
+   
+}
+.contain1{
+    position:absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height:200px;
+    width: 200px;
+    opacity: 0.5;
+   
 }
 
 .second-div{
     width: 100px;
     height: 100px;
-    border: 5px solid white;
+    
     border-radius: 50%;
     position: absolute;
    top: 0;
    animation: width 5s infinite;
+   background: -webkit-linear-gradient(#f12711,#f5af19);
+   
+
+}
+.second-div1{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    position: absolute;
+   top: 0;
+   animation: width 5s infinite;
+   background: -webkit-linear-gradient(#f12711,#f5af19);
+   
 
 }
 .third-div{
     width: 100px;
     height: 100px;
-    border: 5px solid white;
+    
     border-radius: 50%;
     position: absolute;
     bottom : 0;
     animation: breadth 5s infinite;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    z-index: -200;
+}
+.third-div1{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    position: absolute;
+    bottom : 0;
+    animation: breadth 5s infinite;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    z-index: -200;
 }
 .words{
-    color: orange;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+     -webkit-background-clip: text;
+     background-clip: text;
+     -webkit-text-fill-color: transparent;
 }
-
+/*about section*/
 #about{
     margin: 0% 5%;
     padding-top: 4%;
     color: white;
-    height: 50vh;
+    height: 90vh;
+    border-bottom: 3px solid black;
+    overflow: auto;
    
+}
+#about h1{
+    font-size:40px;
+  background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .image{
     height: 350px;
@@ -138,11 +269,195 @@
     float: right;
     margin-left: 10px;
 }
+.about-img{
+    overflow: auto;
+}
 .about-img p{
     padding-right: 5px;
     padding-top: 5px;
     text-align: justify;
     align-content: center;
+    color:#eee
+    
+}
+.technical{
+    border-bottom: 3px solid black;
 }
 
+.technical h1{
+        text-align: center;
+        font-size: 40px;
+        background: -webkit-linear-gradient(#f12711,#f5af19);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+     
+}
+.technical ul{
+    display: flex;
+    justify-content: center;
+}
+.technical li{
+    list-style-type: none;
+    padding-left: 25px;
+    
 
+}
+.technical li i{
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 70px;
+    
+}
+
+@media screen and (max-width:720px){
+    .technical ul{
+        display: block;
+        text-align: center;
+    }
+    .resume{
+        display: block;
+        align-content: center;
+    }
+}
+
+#resume{
+    margin-top: 5%;
+    border-bottom: 3px solid black;
+    width: 100vw
+}
+.resume{
+    display: flex;
+    justify-content: center;
+}
+#resume h1{
+    font-size:40px;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+      -webkit-background-clip: text;
+        background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+}
+.resume1{
+    
+    width: 100vw;
+}
+.resume2{
+    width: 100vw;
+}
+.resume1 img{
+    border: 3px solid black;
+    border-radius: 5px;
+    
+
+}
+.resume2 img{
+    border: 3px solid black;
+    border-radius: 5px;
+    
+}
+
+.resume1 p{
+    text-align: center;
+}
+.resume2 p{
+    text-align: center;
+}
+.resume1 a{
+    text-decoration: none;
+}
+.resume2 a{
+    text-decoration: none;
+}
+.resume1  a p{
+    
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+.resume2  a p{
+    text-decoration: none;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@media screen and (max-width:720px){
+    
+    .resume{
+        display: block;
+        margin: auto;
+    }
+    .resume1 img{
+
+        margin-left: auto;
+        margin-right: auto;
+        width: 70vw;
+        display: block;
+}
+    .resume2 img{
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+}
+#contact{
+    margin-top: 5%;
+    border-bottom: 3px solid black;
+    width: 100vw;
+    padding-bottom: 8%;
+
+}
+#contact h1{
+    font-size:40px;
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+
+}
+#contact p{
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+}
+#contact a{
+    text-decoration: none;
+    display: block;
+    text-align: center;
+ 
+   
+
+}
+#contact i{
+    
+        
+      
+        background: -webkit-linear-gradient(#f12711,#f5af19);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+#footer{
+    width: 100vw;
+
+}
+#footer p{
+        background: -webkit-linear-gradient(#f12711,#f5af19);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-align: center;
+
+}

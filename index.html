@@ -11,6 +11,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./assetss/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="96x96" href="./assetss/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./assetss/favicon-16x16.png">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
 
     <title>Favour's Portfolio</title>
@@ -21,23 +22,41 @@
         <nav class="nav">
             
                 <ul class="nav-list">
-                    <li><a href="">HOME</a> </li>
-                    <li><a href="">REZUME</a></li>
+                    <li><a href="#header-1">HOME</a> </li>
+                    
                     <li><a href="#about">ABOUT</a></li>
+                    <li><a href="">REZUME</a></li>
                     <li><a href="">CONTACT</a></li>
                 </ul>
+
+                <div class="width">
+                    <i class="fas fa-bars bars"></i>
+                    
+                </div>
+                <div class="navv">
+                    <ul class="nav-lists">
+                        <li><a href="#header-1">HOME</a> </li>
+                        
+                        <li><a href="#about">ABOUT</a></li>
+                        <li><a href="">REZUME</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
            
         </nav>
        
 
     </header>  
 
-    <section class="header-1">
+    <section id="header-1">
         <div class="header-word">
             <div class= 'firstdiv'>
                 Hi there 👋 <br> <br>
 
-                My name is <span style="color: orange;"> Favour Oyewumi</span> <br> <br>
+                My name is <span style="background: -webkit-linear-gradient(#f12711,#f5af19);
+                -webkit-background-clip: text;
+                background-clip: text;
+                -webkit-text-fill-color: transparent;"> Favour Oyewumi</span> <br> <br>
 
                 I am a <span class="words"></span>
            
@@ -50,11 +69,19 @@
 
             </div>
         </div>
+        <div class="contain1">
+            <div class='second-div1'>
+
+            </div>
+            <div class='third-div1'>
+
+            </div>
+        </div>
         </div>
     </section>
 
     <section id="about">
-        <h1>Who am I???</h1>
+        <h1 >Who am I???</h1>
         <div class="about-img">
             <img src="./assetss/IMG_0776.jpg" alt="Favour's Picture" class="image">
         
@@ -74,13 +101,58 @@
             </p>
         </div>
     </section>
+
+
     <section class="technical">
        <h1> Here are some of the Technologies I work with:</h1>
 
-        <div>
+        <div style="margin-top: 5%;">
+            <ul>
+                <li><i class="fab fa-html5"></i></li>
+                <li><i class="fab fa-css3-alt"></i></li>
+                <li><i class="fab fa-js"></i></li>
+                <li><i class="fab fa-angular"></i></li>
+                <li><i class="fab fa-python"></i></li><br>
+                <li><img src="./assetss/scikit-learn-seeklogo.com.svg" alt="sklearn" style="width: 70px;height: 70px;"> </li>
+                <li><img src="./assetss/tensorflow-icon.svg" alt=" tensorflow-icon"></li>
+    
+            </ul>
 
         </div>
     </section>
+    <section id="resume">
+        <h1 >Check out my Resume</h1>
+        <div class="resume">
+        <div class="resume1">
+        <a href="./assetss/Favour's Resume.pdf" download="Favour's Resume.pdf" target="_blank"><img src="./assetss/Capture1.PNG" alt="resume-web">
+        <p> Check out my Web Development Resume</p></a>
+    </div>
+    <div class="resume2">
+        <a href="./assetss/Favour's Resume ml.pdf" download="Favour's Resume ml.pdf" target="_blank"><img src="./assetss/Capture.PNG" alt="resume-ml">
+        <p> Check out my Machine Learning Resume</p></a>
+    </div>
+    </div>
+    </section>
+
+    <section id="contact">
+        <h1>Contact me through this channels:</h1>
+        
+        <p>Checkout my GitHub</p>
+        <a href="https://www.github.com/FavourOyewumi7"><i class="fab fa-github"></i></a>
+
+        <p>Follow me on Twitter</p>
+        <a href="https://twitter.com/ayomideif"><i class="fab fa-twitter"></i></a>
+        <p> Check me on LinkedIn</p>
+        <a href="https://www.linkedin.com/in/favour-oyewumi-3610731a6/"><i class="fab fa-linkedin-in"></i></a>
+
+        <p>Shoot me an E-mail </p>
+        <a href="oyewumifavour65@gmail.com"><i class="fas fa-envelope"></i></a>
+
+    </section>
+
+    <footer id="footer">
+        <p> Made with ❤ by Favour Oyewumi  </p>
+    </footer>
 <script src="./assetss/index.js"></script>
 </body>
 </html>
