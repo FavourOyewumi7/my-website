@@ -74,8 +74,33 @@
     .contain1{
         display: none;
     }
+    .contain2{
+        display: block;
+    }
+    .second-div{
+        animation: next 5s infinite;
+    }
+    .third-div{
+        animation: prev 5s infinite;
+    }
     
     
+}
+@keyframes next{
+    0%{left: 50%}
+
+    50%{left: 0;}
+    
+    75%{right: 0;}
+    100%{left: 50%;}
+}
+@keyframes prev{
+    0%{left: 0}
+    
+    50%{left: 50%;}
+    
+    75%{right: 0;}
+    100%{left: 0;}
 }
 
 .nav-list li{
@@ -164,6 +189,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    background: transparent;
     
     
 
@@ -191,7 +217,38 @@
     opacity: 0.5;
    
 }
-
+.contain2{
+    display: none;
+    position:absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    height:200px;
+    width: 200px;
+    opacity: 0.5;
+}
+.second-div2{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    position: absolute;
+   left: 0;
+   
+   background: -webkit-linear-gradient(#f12711,#f5af19);
+}
+.third-div2{
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    z-index: -200;
+}
 .second-div{
     width: 100px;
     height: 100px;
@@ -320,18 +377,17 @@
     .resume{
         display: block;
         align-content: center;
+
     }
 }
 
 #resume{
     margin-top: 5%;
     border-bottom: 3px solid black;
-    width: 100vw
+    width: 100vw;
+    padding-bottom: 5%;
 }
-.resume{
-    display: flex;
-    justify-content: center;
-}
+
 #resume h1{
     font-size:40px;
     background: -webkit-linear-gradient(#f12711,#f5af19);
@@ -340,8 +396,12 @@
       -webkit-text-fill-color: transparent;
       text-align: center;
 }
+.resume{
+    display: flex;
+    justify-content: center;
+}
 .resume1{
-    
+    margin-left: 15%;
     width: 100vw;
 }
 .resume2{
@@ -367,9 +427,11 @@
 }
 .resume1 a{
     text-decoration: none;
+    text-align: center;
 }
 .resume2 a{
     text-decoration: none;
+    text-align: center;
 }
 .resume1  a p{
     
@@ -392,7 +454,7 @@
     
     .resume{
         display: block;
-        margin: auto;
+    
     }
     .resume1 img{
 
@@ -460,4 +522,32 @@
         -webkit-text-fill-color: transparent;
         text-align: center;
 
+}
+.up{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 30;
+}
+.up a{
+    text-decoration: none;
+}
+.up i{
+    background: -webkit-linear-gradient(#f12711,#f5af19);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    
+
+}
+.active{
+    display: inline-block;
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    
+    
+    box-shadow: 2px 2px 2px #ccc;
+    transition: 0.5s;
 }

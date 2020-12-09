@@ -26,3 +26,13 @@ function showNav(){
     lists.style.display = 'block';
     lis.style.display = 'none'
 }
+
+let navo = document.getElementsByClassName('nav')[0]
+
+window.onscroll = function(){
+    let scrolltop = window.scrollY 
+
+    if (scrolltop>= 150){
+        navo.classList.add('active')
+    }
+}
