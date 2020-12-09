@@ -74,15 +74,6 @@
     .contain1{
         display: none;
     }
-    .contain2{
-        display: block;
-    }
-    .second-div{
-        animation: next 5s infinite;
-    }
-    .third-div{
-        animation: prev 5s infinite;
-    }
     
     
 }
@@ -185,7 +176,7 @@
     font-weight: 900;
     margin: 0;
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
