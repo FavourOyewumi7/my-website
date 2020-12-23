@@ -16,6 +16,8 @@ function myWords(names, target) {
 }
 
 
+
+
 new WOW().init();
 
 nav.addEventListener("click", showNav);
