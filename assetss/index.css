@@ -7,14 +7,14 @@
 }
 #header{
     width: 100vw;
-    height: 20%;
+    height: 15%;
 }
 .nav{
     align-content: center;
     width: 100vw;
-    height: 10%;
+    height: 12%;
     text-align: center;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
    
     
 }
@@ -26,7 +26,8 @@
 }
 .width{
     display: none;
-    padding-bottom: 10px;
+    
+    padding-bottom: 14px;
 }
 .width i{
     font-size: 40px;
@@ -73,6 +74,9 @@
     }
     .contain1{
         display: none;
+    }
+    .word2,.word1,.word3{
+        width: 10px;
     }
     
     
@@ -322,6 +326,8 @@
     animation-duration: 20s;
     animation-timing-function: steps(25, end);
     animation-iteration-count: infinite;
+    
+    
   }
   .word1::after, .word2::after, .word3::after {
     content: "|";
@@ -508,7 +514,7 @@
     border-bottom: 3px solid black;
     width: 100vw;
     padding-bottom: 8%;
-    height: 50vh;
+    height: 100vh;
 
 }
 #contact h1{
@@ -579,10 +585,8 @@
     position: fixed;
     z-index: 10000;
     width: 100vw;
-    
-    
-    box-shadow: 2px 2px 2px #ccc;
     transition: 0.5s;
+    border-bottom: 2px solid black;
 }
 
 @keyframes text2 {
@@ -591,7 +595,7 @@
     }
     
     70%, 90% {
-      width: 17em;
+      width: 10em;
     }
   }
 
@@ -600,7 +604,7 @@
       width: 0;
     }
     10%, 20% {
-      width: 14em;
+      width: 10.5em;
     }
   }
   @keyframes text3 {
@@ -608,7 +612,7 @@
       width: 0;
     }
     30%, 40% {
-      width: 8em;
+      width: 10em;
     }
   }
   @keyframes caret {
