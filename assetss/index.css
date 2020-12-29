@@ -5,6 +5,19 @@
     
     
 }
+.imag{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #252525 !important;
+    overflow: hidden;
+    width: 0;
+    
+    height: 100vh;
+    transition: .5s ease;
+    display: none;
+}
 #header{
     width: 100vw;
     height: 15%;
@@ -128,9 +141,17 @@
 }
 .navv{
     text-align: center;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%,-50%);
+    position: absolute;
+    
+    
 }
 .nav-lists{
-    display: none;
+    
     text-align: center;
 }
 .nav-lists li a{
@@ -355,10 +376,14 @@
 .image{
     height: 350px;
     width: 350px;
-    border: 5px solid black;
+    max-width: 100%;
     border-radius: 5px;
     float: right;
     margin-left: 10px;
+    background-position: center;
+    background-repeat: none ;
+    
+    
 }
 .about-img{
     overflow: auto;

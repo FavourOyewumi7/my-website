@@ -6,21 +6,21 @@ let lists = document.getElementsByClassName('nav-lists')[0];
 let bar = document.getElementsByClassName('bars')[0]
 let lis = document.getElementsByClassName('nav-list')[0];
 
+let imag = document.getElementsByClassName('imag')[0]
+//myWords(names,tag)
 
-myWords(names,tag)
-
-function myWords(names, target) {
+/*function myWords(names, target) {
     for (let i = 0; i < names.length; i++) {
         setInterval((c => () => target.innerHTML = c)(names[i]), (i + 1)* 1000);
     }
-}
+}*/
 
 
 
 
 new WOW().init();
 
-nav.addEventListener("click", showNav);
+
 
 function showNav(){
  
@@ -29,7 +29,27 @@ function showNav(){
     lis.style.display = 'none'
 }
 
+
 let navo = document.getElementsByClassName('nav')[0]
+
+let navv = document.getElementsByClassName('navv')[0]
+let x = document.getElementsByClassName('x')[0]
+let raw =()=>{
+    imag.style.width = '100vw';
+    navv.style.display = 'block';
+    
+    bar.style.display = 'none';
+    lis.style.display = 'none';
+    imag.style.display='block'
+    window.scrollY = 0
+};
+let w =()=>{
+    navv.style.display = 'none'
+    bar.style.display = 'block'
+    imag.style.display='none'
+}
+x.addEventListener("click", w)
+nav.addEventListener("click", raw);
 
 window.onscroll = function(){
     let scrolltop = window.scrollY 
@@ -38,3 +58,4 @@ window.onscroll = function(){
         navo.classList.add('active')
     }
 }
+
