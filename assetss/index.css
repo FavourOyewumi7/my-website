@@ -2,7 +2,7 @@
     background-color: #252525;
     font-family: 'JetBrains Mono', monospace;
     scroll-behavior: smooth;
-    
+    box-sizing: border-box;
     
 }
 .imag{
