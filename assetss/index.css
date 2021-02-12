@@ -8,14 +8,13 @@
     
 }
 .imag{
-    position: relative;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #92b4f4 !important;
     overflow: hidden;
     width: 0;
-    
+    z-index: 10;
     height: 100vh;
     transition: .5s ease;
     display: none;
