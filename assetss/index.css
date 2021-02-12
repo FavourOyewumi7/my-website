@@ -472,7 +472,7 @@
     .contain1{
         display: none;
     }
-    .header-word
+    
     
 }
 
@@ -626,7 +626,7 @@
 }
 @media screen and (max-width : 720px){
     #contact{
-        height: 60vh;
+        height: 80vh;
     }
     .contact-div{
         display: flex;
@@ -636,7 +636,7 @@
     }
     .contact-div i{
         font-size: 30px;
-        padding-top: 20px;
+        padding-top: 10px;
     }
     #footer{
         height: 20px;
