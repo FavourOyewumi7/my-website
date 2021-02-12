@@ -531,7 +531,8 @@
     }
     .proj-img{
         height: 100px;
-        width: 100px;
+        width: inherit;
+        margin-bottom: 10px;
     }
     .project{
         height: 500px;
@@ -547,7 +548,7 @@
     border-bottom: 3px solid #cfdee7;
     width: 100vw;
     padding-bottom: 8%;
-    height: 100vh;
+    height: 60vh;
 
 }
 #contact h1{
@@ -559,14 +560,17 @@
       text-align: center;
 
 }
-#contact p{
+.contact-div{
+    margin: auto;
+}
+.contact-div p{
     background: #cfdee7;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
       text-align: center;
 }
-#contact a{
+.contact-div a{
     text-decoration: none;
     display: block;
     text-align: center;
@@ -574,7 +578,7 @@
    
 
 }
-#contact i{
+.contact-div i{
     
         
       
