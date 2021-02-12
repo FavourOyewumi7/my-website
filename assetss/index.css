@@ -527,9 +527,11 @@
     color: #0a369d;
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:567px){
     .proj-desc{
         display: block;
+        text-align: center;
+        align-self: center;
     }
     .proj-img{
         height: 100px;
@@ -537,7 +539,9 @@
         margin-bottom: 10px;
     }
     .project{
-        height: 500px;
+        height: 600px;
+        width: 80vw;
+        
         
     }
     
