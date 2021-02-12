@@ -12,7 +12,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #5e7ce2 !important;
+    background-color: #92b4f4 !important;
     overflow: hidden;
     width: 0;
     
@@ -30,6 +30,7 @@
     height: 12%;
     text-align: center;
     border-bottom: 2px solid #cfdee7;
+    
    
     
 }
@@ -38,6 +39,7 @@
     display: flex;
     justify-content: center;
     margin-top: 3%;
+    
 }
 .width{
     display: none;
