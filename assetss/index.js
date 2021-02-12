@@ -34,6 +34,10 @@ let navo = document.getElementsByClassName('nav')[0]
 
 let navv = document.getElementsByClassName('navv')[0]
 let x = document.getElementsByClassName('x')[0]
+let x1 = document.getElementsByClassName('x1')[0]
+let x2 = document.getElementsByClassName('x2')[0]
+let x3 = document.getElementsByClassName('x3')[0]
+let x4 = document.getElementsByClassName('x4')[0]
 let raw =()=>{
     imag.style.width = '100vw';
     navv.style.display = 'block';
@@ -49,6 +53,10 @@ let w =()=>{
     imag.style.display='none'
 }
 x.addEventListener("click", w)
+x1.addEventListener("click", w)
+x2.addEventListener("click", w)
+x3.addEventListener("click", w)
+x4.addEventListener("click", w)
 nav.addEventListener("click", raw);
 
 window.onscroll = function(){
