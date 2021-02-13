@@ -338,6 +338,9 @@
     background: #92b4f4;
     border-radius: 10px;
   }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0a369d;
+  }
 
 /*about section*/
 #about{
