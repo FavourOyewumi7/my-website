@@ -586,7 +586,7 @@
 #contact h1{
     font-size:30px;
     color: #0a369d;
-      text-align: left;
+      text-align: center;
       margin-bottom: 10px;
       padding:20px 20px;
 
@@ -596,7 +596,7 @@
     display: flex;
     align-content: center;
     position: absolute;
-    left: 40%;
+    left: 35%;
     top: 50%;
 }
 
