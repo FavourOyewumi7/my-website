@@ -676,7 +676,8 @@
     width: 100vw;
     transition: 0.5s;
     border-bottom: 2px solid #0a369d;
-    color: #0a369d;
+    color: #92b4f4;
+    background-color: #5e7ce2;
 }
 
 @keyframes text2 {
