@@ -1,6 +1,6 @@
 *{
     /*background: #5e7ce2;*/
-    font-family: 'Commissioner', sans-serif;
+    font-family: 'Nunito', sans-serif;
     scroll-behavior: smooth;
     margin: 0;
     padding: 0;
@@ -504,6 +504,15 @@
     margin-bottom: 20px;
     padding:0 30px ;
 }
+.project:hover{
+    background-color: #5e7ce2;
+    color: #cfdee7;
+}
+.project:hover + p{
+    color: #cfdee7;
+}
+
+
 .proj-desc p{
     color: #92b4f4;
     margin: auto;
@@ -518,6 +527,7 @@
 .proj-name{
     color: #0a369d;
     font-size: x-large;
+    padding:10px 0;
 }
 .proj-img{
     width: 300px;
