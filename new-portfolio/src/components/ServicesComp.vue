@@ -3,7 +3,7 @@
     <h2 class="text-2xl border-b-2 font-bold">Service</h2>
 
     <div class="grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-8 px-8 py-12">
-        <div class="hover:scale-105">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
             <h2>Web Development</h2>
             <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, enim aliquid! Architecto nesciunt doloremque
                  tempore labore aspernatur
@@ -11,7 +11,7 @@
             </p>
         </div>
 
-        <div class="hover:scale-105">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
             <h2>Data Analysis</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, enim aliquid! Architecto nesciunt doloremque
@@ -21,7 +21,7 @@
 
         </div>
 
-        <div class="hover:scale-105">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
             <h2>Machine Learning</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, enim aliquid! Architecto nesciunt doloremque
@@ -30,7 +30,7 @@
             </p>
         </div>
 
-        <div class="hover:scale-105">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">
             <h2>Critical Thinking</h2>
             <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, enim aliquid! Architecto nesciunt doloremque

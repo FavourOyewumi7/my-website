@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar />
     <LandingComp />
-    <ExpComp />
+    <WorkComp />
     <ServicesComp />
     <AboutComp id="about" />
     <ContactComp id="contact" />
@@ -13,7 +13,7 @@
 <script>
 import NavBar from './components/NavBar.vue';
 import LandingComp from './components/LandingComp.vue';
-import ExpComp from './components/ExpComp.vue';
+import WorkComp from './components/WorkComp.vue';
 import ServicesComp from './components/ServicesComp.vue'
 import AboutComp from './components/AboutComp.vue';
 import ContactComp from './components/ContactComp.vue';
@@ -26,7 +26,7 @@ export default {
   components: {
     NavBar,
     LandingComp,
-    ExpComp,
+    WorkComp,
     ServicesComp,
     AboutComp,
     ContactComp,
