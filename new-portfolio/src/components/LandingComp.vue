@@ -1,19 +1,49 @@
 <template>
   <div class="my-16 pl-12 pr-20">
-    <h1 class="text-8xl">
-      Hello, <br>
-      I'm Favour Oyewumi - a <br> curious 
-       software engineer <br> based in 
-      Lagos, Nigeria.
-    </h1>
+    <div class="grid grid-cols-4">
+      <h1 class="text-8xl col-span-3">
+        Hello, <br>
+        I'm Favour Oyewumi - a curious 
+        software engineer based in 
+        Lagos, Nigeria.
+      </h1>
+    </div>
 
     <div class="py-8">
       <ul class="flex">
-        <li class="pr-5 cursor-pointer link" > <a href="https://www.github.com/FavourOyewumi7"></a> Github  </li>
-        <li class="px-5 cursor-pointer link" ><a href="https://www.linkedin.com/in/favour-o-3610731a6/"></a> LinkedIn </li>
-        <li class="px-5 cursor-pointer link" ><a href="https://twitter.com/ayomideif"></a> Twitter </li>
-        <li class="px-5 cursor-pointer link" ><a href="mailto:oyewumifavour65@gmail.com"></a> Email </li>
-        <li class="px-5 cursor-pointer link" ><a href=""></a> Instagram </li>
+        <li class="pr-5 cursor-pointer link" > 
+          <a href="https://www.github.com/FavourOyewumi7" target="_blank"> 
+              Github 
+          </a>
+        </li>
+
+
+        <li class="px-5 cursor-pointer link" >
+            <a href="https://www.linkedin.com/in/favour-o-3610731a6/" target="_blank"> 
+                LinkedIn 
+            </a>
+        </li>
+
+
+        <li class="px-5 cursor-pointer link" >
+            <a href="https://twitter.com/ayomideif" target="_blank"> 
+                Twitter 
+            </a>
+        </li>
+
+
+        <li class="px-5 cursor-pointer link" >
+            <a href="mailto:oyewumifavour65@gmail.com" target="_blank">
+                Email 
+            </a>
+        </li>
+
+
+        <li class="px-5 cursor-pointer link" >
+            <a href="" target="_blank">
+                Instagram 
+            </a>
+        </li>
       </ul>
     </div>
 
@@ -27,7 +57,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .link:hover{
   font-weight: bolder;
   transition: ease-out 0.3s;
@@ -36,4 +66,4 @@ export default {
   background-color: rgba(0,0,0,0.1);
 }
 
-</style>
+</style>>

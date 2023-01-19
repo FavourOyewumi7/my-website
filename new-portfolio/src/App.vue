@@ -1,8 +1,11 @@
 <template>
-  <div class="">
+  <div id="app">
     <NavBar />
     <LandingComp />
     <ExpComp />
+    <ServicesComp />
+    <AboutComp id="about" />
+    <ContactComp id="contact" />
     <FooterBar />
   </div>
 </template>
@@ -10,8 +13,13 @@
 <script>
 import NavBar from './components/NavBar.vue';
 import LandingComp from './components/LandingComp.vue';
-import ExpComp from './components/ExpComp.vue'
+import ExpComp from './components/ExpComp.vue';
+import ServicesComp from './components/ServicesComp.vue'
+import AboutComp from './components/AboutComp.vue';
+import ContactComp from './components/ContactComp.vue';
 import FooterBar from './components/FooterBar.vue';
+
+
 
 export default {
   name: 'App',
@@ -19,6 +27,9 @@ export default {
     NavBar,
     LandingComp,
     ExpComp,
+    ServicesComp,
+    AboutComp,
+    ContactComp,
     FooterBar
   }
 }
@@ -26,10 +37,12 @@ export default {
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{
+  scroll-behavior: smooth;
+}
 #app {
   font-family: 'Nunito', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 
   
 }
