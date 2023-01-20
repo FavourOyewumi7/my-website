@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-12 pl-12 pr-20 mb-20 ">
+    <div class="mt-12 pl-12 pr-12 lg:pr-20 mb-20 ">
         <h2 class="text-2xl border-b-2 font-bold">Works</h2>
     
         <div class="flex-col gap-y-5 lg:grid lg:grid-cols-2 lg:gap-8 my-12">
