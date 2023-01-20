@@ -7,7 +7,7 @@
             <div class="px-5 pt-5 ">
                 <h2 class="text-xl font-bold">{{project.title}}</h2>
                 <p>{{project.about}}</p>
-                <ul class="flex pt-5">
+                <ul class="flex pt-5 whitespace-normal break-words">
                     <li :key="index" v-for="(val,index) in project.tools" class="pr-5 ">
                         {{ val }}
                     </li>

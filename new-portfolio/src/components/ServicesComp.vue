@@ -1,6 +1,6 @@
 <template>
   <div class="my-12 pl-12 pr-20">
-    <h2 class="text-2xl border-b-2 font-bold">Service</h2>
+    <h2 class="text-2xl border-b-2 font-bold">Services</h2>
 
     <div class="grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-8 px-8 py-12">
         <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105">

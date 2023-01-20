@@ -2,7 +2,7 @@
   <div id="app">
     <NavBar />
     <LandingComp />
-    <WorkComp />
+    <WorkComp id="works" />
     <ServicesComp />
     <AboutComp id="about" />
     <ContactComp id="contact" />

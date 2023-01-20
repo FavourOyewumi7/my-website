@@ -1,6 +1,6 @@
 <template>
   <div class="my-16 pl-12 pr-20">
-    <div class="grid grid-cols-4">
+    <div class="xl:grid xl:grid-cols-4 block">
       <h1 class="text-8xl col-span-3">
         Hello, <br>
         I'm Favour Oyewumi - a curious 

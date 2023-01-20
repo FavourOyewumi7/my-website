@@ -2,8 +2,8 @@
     <div class="mt-12 pl-12 pr-20 mb-20 ">
         <h2 class="text-2xl border-b-2 font-bold">Works</h2>
     
-        <div class="grid grid-cols-2 gap-8 my-12">
-            <WorkCard v-for="project in projects" :key="project.id" :project="project" class="" />
+        <div class="flex-col gap-y-5 lg:grid lg:grid-cols-2 lg:gap-8 my-12">
+            <WorkCard v-for="project in projects" :key="project.id" :project="project" class="my-12 lg:my-0" />
         </div>
 
         <p class="font-bold"> N.B If you want to know more about my Machine Learning Journey, you can check out my   <a href="https://zindi.africa/users/FavourOyewumi/competitions" target="_blank" class="underline underline-offset-4 decoration-1"> Zindi </a> or <a href="https://www.kaggle.com/favouroyewumi1" target="_blank" class="underline underline-offset-4 decoration-1">Kaggle </a>  accounts</p>

@@ -11,7 +11,7 @@
 
         <span class="pr-8">
           <ul class="flex ">
-            <li class="px-4 link" > <a href="#work"> Work</a></li>
+            <li class="px-4 link" > <a href="#works"> Work</a></li>
             <li class="px-4 link"><a href="#about">About</a></li>
             <li class="px-4 link"><a href="">Resume</a></li>
             <li class="pl-4 pr-8 link"><a href="#contact">Contact </a></li>
