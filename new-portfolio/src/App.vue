@@ -51,6 +51,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 *{
   scroll-behavior: smooth;
+  width:auto;
   
 }
 *.dark{
