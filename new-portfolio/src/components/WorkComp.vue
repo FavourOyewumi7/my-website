@@ -35,7 +35,7 @@ export default {
         },
         {
           title:'PSF Hub',
-          about:'A revamped website for the Pastors Seed Family, a youth arm in my church',
+          about:'A revamped website for the Pastors Seed Family, a youth arm in my church (not responsive yet, work ongoing)',
           imageUrl:'psfhub.jpg',
           link:'https://staging.psalmzy.com/',
           tools:['Vue', 'Tailwind', 'Vue Router'],
@@ -45,13 +45,13 @@ export default {
           title:'My Portfolio Website',
           about:'This is the website you are looking at',
           imageUrl:'newportfolio.jpg',
-          link:'https://crypto-library-ed87usjj3-esscapeplan.vercel.app/',
+          link:'https://favouroyewumi.vercel.app',
           tools:['Vue', 'Tailwind'],
           id:4
         },
         {
           title:'Church Template Design',
-          about:'Made a church website design template',
+          about:'Made a church website design template (not responsive)',
           imageUrl:'daystar-static.jpg',
           link:'https://daystar-lac.vercel.app/ ',
           tools:['HTML', 'CSS', 'JS'],
@@ -59,7 +59,7 @@ export default {
         },
         {
           title:'Hackathon Web Design',
-          about:'We made a web design cms, where I was required to build some templates',
+          about:'We made a web design cms, where I was required to build some templates (not responsive)',
           imageUrl:'ohw-static-2.jpg',
           link:'https://favouroyewumi7.github.io/',
           tools:['HTML', 'CSS', 'JS'],
