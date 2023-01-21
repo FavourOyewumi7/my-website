@@ -1,5 +1,5 @@
 <template>
-  <div class="my-20 pl-12 pr-12 lg:pr-20">
+  <div class="my-20 pl-12 pr-12 lg:pr-20 ">
     <h2 class="text-2xl border-b-2 font-bold">About</h2>
     <div class="block xl:grid xl:grid-cols-3">
       <p class="text-center xl:text-left text-xl col-span-2 my-4 pt-5">

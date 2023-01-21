@@ -1,5 +1,5 @@
 <template>
-  <div class="my-12 pl-12 pr-12 lg:pr-20">
+  <div class="my-12 pl-12 pr-12 lg:pr-20 ">
     <h2 class="text-2xl border-b-2 font-bold">Services</h2>
 
     <div class="flex-col lg:grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-8 px-8 py-12">

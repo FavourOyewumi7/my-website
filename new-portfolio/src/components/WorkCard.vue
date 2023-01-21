@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-md shadow-slate-200 rounded-lg pb-12 hover:shadow-slate-300 cursor-pointer">
+    <div class="shadow-md shadow-slate-200 dark:shadow-gray-200 rounded-lg pb-12 hover:shadow-slate-300 cursor-pointer">
         <a :href="project.link" target="_blank">
             <div class="shadow-sm ">
                 <img :src="require('@/assets/' + project.imageUrl + '')" alt="">

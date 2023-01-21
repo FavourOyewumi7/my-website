@@ -1,5 +1,5 @@
 <template>
-  <div class="my-16 pl-12 pr-12 lg:pr-20">
+  <div class="my-16 pl-12 pr-12 lg:pr-20  dark:text-gray-200">
     <div class="xl:grid xl:grid-cols-4 block ">
       <h1 class="text-6xl lg:text-8xl col-span-3">
         Hello, <br>

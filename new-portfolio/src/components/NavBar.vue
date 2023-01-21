@@ -1,10 +1,10 @@
 <template>
   
-    <div class="relative py-8 px-12 nav">
+    <div class="relative py-8 px-12 nav ">
       <div class="absolute inset-0 nav-class blur" >
 
       </div>
-      <div class="flex justify-between relative ">
+      <div class="flex justify-between relative dark:text-white  ">
         <span class="font-bold ">
           <h2>  Favour Oyewumi. </h2>
         </span>
@@ -19,7 +19,7 @@
           </ul>
         </span>
 
-        <span>
+        <span @click="dark()">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 ">
             <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
           </svg>
@@ -41,7 +41,7 @@
 
       
     </div>
-    <div class="flex flex-row justify-center mt-20 transition ease-in-out delay-150" v-show="!show">
+    <div class="flex flex-row justify-center mt-20 transition-all ease-in-out duration-300 dark:text-white dark:bg-black" v-show="!show" :style="show ? navStyle:''" >
         <ul class="">
           <li class="py-4 link" > <a href="#works"> Work</a></li>
           <li class="py-4 link"><a href="#about">About</a></li>
@@ -60,16 +60,25 @@ export default {
     data(){
       return{
         show:true,
+        darkMode:false,
         navStyle:{
-          width: '100vh',
-          
+          transition: '0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28)',
+        },
+        navnotStyle:{
+          height:'0vh',
+          display:'hidden'
         }
       }
     },
     methods:{
       navopen(){
         this.show = !this.show
+      },
+      dark(){
+        this.darkMode = !this.darkMode
+        this.$emit('value', this.darkMode)
       }
+
     }
 
 }
