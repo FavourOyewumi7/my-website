@@ -21,7 +21,7 @@ export default {
           title:'Crypto Library',
           about:'A web library where you can learn everything from cryptocurrency to Web3',
           imageUrl:'cryptolib.jpg',
-          link:'https://crypto-library-ed87usjj3-esscapeplan.vercel.app/',
+          link:'',
           tools:['Vue', 'Tailwind', 'Vue Router'],
           id:1,
           visible:false
