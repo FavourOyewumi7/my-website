@@ -1,5 +1,5 @@
 <template>
-    <div class="shadow-md shadow-slate-200 dark:shadow-sky-50 dark:hover:shadow-sky-200 rounded-lg pb-12 hover:shadow-slate-300 cursor-pointer">
+    <div class="shadow-md shadow-slate-200 dark:shadow-sky-50 dark:hover:shadow-sky-200 rounded-lg pb-12 hover:shadow-slate-300 cursor-pointer" :class="{'hidden':project.visible,'xl:block':project.visible}">
         <a :href="project.link" target="_blank">
             <div class="shadow-sm ">
                 <img :src="require('@/assets/' + project.imageUrl + '')" alt="">

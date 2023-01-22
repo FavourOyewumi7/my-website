@@ -23,7 +23,8 @@ export default {
           imageUrl:'cryptolib.jpg',
           link:'https://crypto-library-ed87usjj3-esscapeplan.vercel.app/',
           tools:['Vue', 'Tailwind', 'Vue Router'],
-          id:1
+          id:1,
+          visible:false
         },
         {
           title:'Todo App',
@@ -31,7 +32,8 @@ export default {
           imageUrl:'todoapp.jpg',
           link:'https://vue-todo-app-using-state-management.vercel.app/',
           tools:['Vue', 'Tailwind', 'Vuex'],
-          id:2
+          id:2,
+          visible:false
         },
         {
           title:'PSF Hub',
@@ -39,7 +41,8 @@ export default {
           imageUrl:'psfhub.jpg',
           link:'https://staging.psalmzy.com/',
           tools:['Vue', 'Tailwind', 'Vue Router'],
-          id:3
+          id:3,
+          visible:true
         },
         {
           title:'My Portfolio Website',
@@ -47,7 +50,8 @@ export default {
           imageUrl:'newportfolio.jpg',
           link:'https://favouroyewumi.vercel.app',
           tools:['Vue', 'Tailwind'],
-          id:4
+          id:4,
+          visible:false
         },
         {
           title:'Church Template Design',
@@ -55,7 +59,8 @@ export default {
           imageUrl:'daystar-static.jpg',
           link:'https://daystar-lac.vercel.app/ ',
           tools:['HTML', 'CSS', 'JS'],
-          id:5
+          id:5,
+          visible:true
         },
         {
           title:'Hackathon Web Design',
@@ -63,7 +68,8 @@ export default {
           imageUrl:'ohw-static-2.jpg',
           link:'https://favouroyewumi7.github.io/',
           tools:['HTML', 'CSS', 'JS'],
-          id:6
+          id:6,
+          visible:true
         },
         {
           title:'Face Recognition App',
@@ -71,7 +77,8 @@ export default {
           imageUrl:'facerecognition.jpg',
           link:'https://github.com/FavourOyewumi7/face-recognition-project',
           tools:['Python', 'OpenCV', 'Machine Learning'],
-          id:7
+          id:7,
+          visible:false
         },
         {
           title:'Machine Learning/Deep Learning Practice',
@@ -79,7 +86,8 @@ export default {
           imageUrl:'deeplearning.jpg',
           link:'https://github.com/FavourOyewumi7/deeplearning',
           tools:['Python', 'OpenCV', 'Tensorflow', 'Scikit Learn','Pytorch'],
-          id:8
+          id:8,
+          visible:false  
         }
 
         
