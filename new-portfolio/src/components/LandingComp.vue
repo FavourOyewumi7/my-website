@@ -40,7 +40,7 @@
 
 
         <li class="px-5 cursor-pointer link" >
-            <a href="" target="_blank">
+            <a href="https://instagram.com/ayomideof" target="_blank">
                 Instagram 
             </a>
         </li>
