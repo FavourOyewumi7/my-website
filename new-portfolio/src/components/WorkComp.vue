@@ -88,6 +88,24 @@ export default {
           tools:['Python', 'OpenCV', 'Tensorflow', 'Scikit Learn','Pytorch'],
           id:8,
           visible:false  
+        },
+        {
+          title:'Weather App',
+          about:'Built a weather app to check the weather for the day and days ahead',
+          imageUrl:'weather-app.jpg',
+          link:'https://weather-app-bice-omega.vercel.app/',
+          tools:['Vue', 'Tailwind','GSAP'],
+          id:9,
+          visible:false  
+        },
+        {
+          title:'Movie Finder',
+          about:'Developed a movie search app, where you can see info about movies',
+          imageUrl:'movie-finder.jpg',
+          link:'https://movie-search-woad.vercel.app/',
+          tools:['Vue', 'Tailwind','Vue Router'],
+          id:10,
+          visible:false  
         }
 
         
