@@ -13,7 +13,7 @@
           <ul class="md:flex hidden">
             <li class="px-4 link" > <a href="#works"> Work</a></li>
             <li class="px-4 link"><a href="#about">About</a></li>
-            <li class="px-4 link"><a href="https://drive.google.com/drive/folders/1Dury17tPkN6ZNL7XdcTNRX4ZX32P5wjO">Resume</a></li>
+            <li class="px-4 link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing">Resume</a></li>
             <li class="pl-4 pr-8 link"><a href="#contact">Contact </a></li>
             
           </ul>
@@ -52,7 +52,7 @@
         <ul class="flex">
           <li class="py-4 link" > <a href="#works"> Works</a></li>
           <li class="py-4 link"><a href="#about">About</a></li>
-          <li class="py-4 link"><a href="https://drive.google.com/drive/folders/1Dury17tPkN6ZNL7XdcTNRX4ZX32P5wjO">Resume</a></li>
+          <li class="py-4 link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing">Resume</a></li>
           <li class="py-4 pr-8 link"><a href="#contact">Contact </a></li>
           
         </ul>
