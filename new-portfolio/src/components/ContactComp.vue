@@ -1,13 +1,13 @@
 <template>
-  <div class="my-20 pl-12 pr-20 ">
+  <div class="my-20 pl-12 pr-20 contact">
 
     <h2 class="my-4 border-b-2 text-2xl font-bold">Contact</h2>
 
-    <h1 class="text-8xl my-8">
+    <h1 class="text-8xl my-8 work">
         LET'S WORK <br> TOGETHER
     </h1>
 
-    <div>
+    <div class="lists">
         <ul class="flex">
             <li class="pr-5 cursor-pointer links" > 
                 <a href="https://www.github.com/FavourOyewumi7" target="_blank"> 
@@ -61,22 +61,83 @@
 </template>
 
 <script>
-
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 export default {
     name:'ContactComp',
-    components:[
+    mounted(){
+        this.scrollAnimation3()
+        this.scrollAnimation5()
+    },
+
+    methods:{
+    scrollAnimation3() {
+      gsap.timeline({
+      scrollTrigger: {
         
-    ]
-    
+        trigger: ".about-div",
+        start: "top bottom",
+        scrub: true,
+        
+        
+      }
+    }).fromTo(
+     '.work', {
+       opacity: 0,
+         x: "-10%",
+ },
+ {
+   duration: 2.5,
+   opacity: 1,
+   x: 0,
+   ease: "power3.inOut",
+   
+ }
+ )},
+ 
+ 
+ scrollAnimation5() {
+      gsap.timeline({
+      scrollTrigger: {
+        
+        trigger: ".about-div",
+        start: "top center",
+        scrub: 1,
+        
+        
+      }
+    }).fromTo(
+      '.lists',{
+      opacity: 0,
+      y: "-200%",
+    },
+    {
+      duration: 2,
+      opacity: 1,
+      y: 0,
+      ease: "power3.inOut",
+      
+    }
+            )
+ }}
 }
+    
+
 </script>
 
 <style scoped>
-
+.links svg{
+    background: linear-gradient(to left, transparent 50%, rgba(13, 246, 250, 0.3)  50%) right;
+    background-size: 200%;
+  transition: .5s ease-out;
+  cursor: pointer;
+}
 .links svg:hover{
     transition: ease-out 0.3s;
-    cursor: pointer;
-    fill: rgba(0,0,0,0.1);
+    background-position: left;
+    
+   
   }
 .links svg{
     stroke: black;

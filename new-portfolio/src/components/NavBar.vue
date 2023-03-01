@@ -1,20 +1,20 @@
 <template>
   
-    <div class="relative py-8 px-12 nav ">
+    <div class="relative py-8 px-12  nav-div">
       <div class="absolute inset-0 nav-class blur" >
 
       </div>
-      <div class="flex justify-between relative dark:text-white  ">
+      <div class="flex justify-between relative dark:text-white  nav">
         <span class="font-bold ">
           <h2>  Favour Oyewumi. </h2>
         </span>
 
         <span class="pr-8 ">
           <ul class="md:flex hidden">
-            <li class="px-4 link" > <a href="#works"> Work</a></li>
-            <li class="px-4 link"><a href="#about">About</a></li>
-            <li class="px-4 link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing">Resume</a></li>
-            <li class="pl-4 pr-8 link"><a href="#contact">Contact </a></li>
+            <li class="px-2 flex flex-row justify-center link" > <a href="#works" class="flex flex-row justify-center" > Work</a></li>
+            <li class="px-2 flex flex-row justify-center link"><a href="#about" class="flex flex-row justify-center">About</a></li>
+            <li class="px-2 flex flex-row justify-center link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing" class="flex flex-row justify-center">Resume</a></li>
+            <li class="pl-4 pr-8 link"><a href="#contact" class="flex flex-row justify-center">Contact </a></li>
             
           </ul>
         </span>
@@ -50,10 +50,10 @@
     <div class="mx-auto dark:text-white dark:bg-black w-screen mt-20" v-show="!show" :style="show ? navStyle:''" >
       <div>
         <ul class="flex">
-          <li class="py-4 link" > <a href="#works"> Works</a></li>
-          <li class="py-4 link"><a href="#about">About</a></li>
-          <li class="py-4 link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing">Resume</a></li>
-          <li class="py-4 pr-8 link"><a href="#contact">Contact </a></li>
+          <li class="px-2 flex flex-row justify-center link" > <a href="#works" class="" > Work</a></li>
+          <li class="px-2 flex flex-row justify-center link"><a href="#about" class="flex flex-row justify-center">About</a></li>
+          <li class="px-2 flex flex-row justify-center link"><a href="https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing" class="flex flex-row justify-center">Resume</a></li>
+          <li class="pl-4 pr-8 link"><a href="#contact" class="flex flex-row justify-center">Contact </a></li>
           
         </ul>
       </div>
@@ -61,7 +61,7 @@
 </template>
 
 <script>
-
+import {gsap} from 'gsap'
 
 export default {
     name: 'NavBar',
@@ -87,6 +87,21 @@ export default {
         this.$emit('value', this.darkMode)
       }
 
+    },
+    mounted(){
+      gsap.fromTo(
+        '.nav', {
+          opacity: 0,
+      x: "-20%",
+    },
+    {
+      duration: 2,
+      opacity: 1,
+      x: 0,
+      ease: "power3.inOut",
+      
+    }
+    )
     }
 
 }
@@ -96,12 +111,14 @@ export default {
  .nav-class{
     background-image: linear-gradient(75deg, rgba(13, 246, 250, 0.3) 14%, rgba(224, 91, 177, 0.3) 92% );
  }
+ .link{
+  background: linear-gradient(to left, transparent 50%, rgba(13, 246, 250, 0.3)  50%) right;
+  background-size: 200%;
+  transition: .5s ease-out;
+ }
  .link:hover{
-    font-weight: bolder;
-    transition: ease-out 0.3s;
-    cursor: pointer;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.1);
+    background-position: left;
+    font-weight: bold;
     
  }
  

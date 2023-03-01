@@ -1,16 +1,19 @@
 <template>
     <div class="mt-12 pl-12 pr-12 lg:pr-20 mb-20 ">
-        <h2 class="text-2xl border-b-2 font-bold">Works</h2>
+        <h2 class="text-2xl border-b-2 font-bold  work-div">Works</h2>
     
         <div class="flex-col gap-y-5 lg:grid lg:grid-cols-2 lg:gap-8 my-12">
-            <WorkCard v-for="project in projects" :key="project.id" :project="project" class="my-12 lg:my-0" />
+            <WorkCard v-for="project in projects" :key="project.id" :project="project" class="my-12 lg:my-0 work" />
         </div>
 
-        <p class="font-bold"> N.B If you want to know more about my Machine Learning Journey, you can check out my   <a href="https://zindi.africa/users/FavourOyewumi/competitions" target="_blank" class="underline underline-offset-4 decoration-1"> Zindi </a> or <a href="https://www.kaggle.com/favouroyewumi1" target="_blank" class="underline underline-offset-4 decoration-1">Kaggle </a>  accounts</p>
+        <p class="font-bold service-div"> N.B If you want to know more about my Machine Learning Journey, you can check out my   <a href="https://zindi.africa/users/FavourOyewumi/competitions" target="_blank" class="underline underline-offset-4 decoration-1"> Zindi </a> or <a href="https://www.kaggle.com/favouroyewumi1" target="_blank" class="underline underline-offset-4 decoration-1">Kaggle </a>  accounts</p>
       </div>
 </template>
 
 <script>
+import {gsap} from 'gsap'
+import { ScrollTrigger } from 'gsap/all';
+gsap.registerPlugin(ScrollTrigger);
 import WorkCard from './WorkCard.vue'
 export default {
     name:'WorkComp',
@@ -111,8 +114,37 @@ export default {
         
     ]
       }
+    },
+    mounted(){
+      this.scrollAnimation0()
+    },
+    methods:{
+      scrollAnimation0() {
+      gsap.timeline({
+      scrollTrigger: {
+        
+        trigger: ".work-div",
+        start: "top center",
+        scrub:1,
+        pin:true,
+        toggleActions: "restart pause reverse pause"
+       
+      }
+    }).fromTo(
+        '.work', {
+          opacity: 0,
+          x:"-100%"
+    },
+    {
+      duration: 2,
+      opacity: 1,
+      x:0,
+      ease: "power3.inOut",
+      
     }
-}
+    )
+    }
+}}
 </script>
 
 <style>
