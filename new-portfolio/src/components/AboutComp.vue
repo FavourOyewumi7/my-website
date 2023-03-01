@@ -23,19 +23,20 @@ export default {
     },
     methods:{
       scrollAnimation4() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".about-div",
-        start: "top bottom",      
-        scrub: 1,
-       
-      }}).fromTo(
+      gsap.from(
         '.about', {
-          opacity: 0.5,
-            y: "50%",
-    },
-    {
+          opacity: 0.3,
+            y: "-50%",
+            scrollTrigger: {
+        trigger: ".about-div",
+        start: "top 80%", 
+        end:'bottom 70%',     
+        scrub: 1,
+        toggleActions:'play none none none'
+      }
+    })
+
+    gsap.to({
       duration: 3.5,
       opacity: 1,
       y: 0,

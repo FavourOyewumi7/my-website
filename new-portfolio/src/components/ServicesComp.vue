@@ -1,5 +1,5 @@
 <template>
-  <div class="my-12 pl-12 pr-12 lg:pr-20 ">
+  <div class="my-12 pl-12 pr-12 lg:pr-20 service-div">
     <h2 class="text-2xl border-b-2 font-bold">Services</h2>
 
     <div class="flex-col lg:grid grid-cols-2 grid-rows-2 gap-y-16 gap-x-8 px-8 py-12">
@@ -10,7 +10,7 @@
             </p>
         </div>
 
-        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 my-12 lg:my-0 serv-2">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 my-12 lg:my-0 serv-1">
             <h2>Data Analysis</h2>
             <p>
                 If you're looking for someone to analyze your data, I am the perfect candidate.
@@ -31,7 +31,7 @@
             </p>
         </div>
 
-        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 my-12 lg:my-0 serv-2">
+        <div class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-105 my-12 lg:my-0 serv-1">
             <h2>Critical Thinking</h2>
             <p>
                 By participating in challenging platforms like Leetcode and Hackerrank, and solving over 350 questions across both platforms, 
@@ -53,55 +53,35 @@ export default {
     name: 'ServicesComp',
     mounted(){
         this.scrollAnimation1()
-        this.scrollAnimation2()
+        
     },
     methods:{
        scrollAnimation1() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".service-div",
-        start: "20% 75%",
-        end: "75% 20%",
-        scrub: true,
-       
-      }
-    }).fromTo(
-        '.serv-1', {
-          opacity: 0,
-            x: "-20%",
-    },
-    {
-      duration: 0.5,
-      opacity: 1,
-      x: 0,
-      ease: "power3.inOut",
-      
-    }
-    )},
-    scrollAnimation2() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".service-div",
-        start: "top center",
-        scrub: 1
+       gsap.timeline({
+            scrollTrigger: {
+            trigger: ".service-div",
+            start: "top bottom",
+            end:"bottom 80%",
+            toggleActions:'none none none none',
+            scrub: true,
+            
        
       }}).fromTo(
-        '.serv-2', {
+        '.serv-1', {
           opacity: 0,
-            y: "-20%",
-    },
-    {
-      duration: 0.5,
+          stagger:0.4,
+            y: "-100%",
+            
+    },{
+      duration: 2,
       opacity: 1,
-      x: 0,
+      y: 0,
       ease: "power3.inOut",
       
-    }
-    )
-    }
-}}
+    })
+    
+    
+}}}
 </script>
 
 <style>

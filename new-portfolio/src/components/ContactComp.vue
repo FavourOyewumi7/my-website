@@ -1,9 +1,9 @@
 <template>
-  <div class="my-20 pl-12 pr-20 contact">
+  <div class="my-20 pl-12 pr-20 ">
 
-    <h2 class="my-4 border-b-2 text-2xl font-bold">Contact</h2>
+    <h2 class="my-4 border-b-2 text-2xl font-bold contact-div">Contact</h2>
 
-    <h1 class="text-8xl my-8 work">
+    <h1 class="text-8xl my-8 works">
         LET'S WORK <br> TOGETHER
     </h1>
 
@@ -66,61 +66,6 @@ import { ScrollTrigger } from 'gsap/all';
 gsap.registerPlugin(ScrollTrigger);
 export default {
     name:'ContactComp',
-    mounted(){
-        this.scrollAnimation3()
-        this.scrollAnimation5()
-    },
-
-    methods:{
-    scrollAnimation3() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".about-div",
-        start: "top bottom",
-        scrub: true,
-        
-        
-      }
-    }).fromTo(
-     '.work', {
-       opacity: 0,
-         x: "-10%",
- },
- {
-   duration: 2.5,
-   opacity: 1,
-   x: 0,
-   ease: "power3.inOut",
-   
- }
- )},
- 
- 
- scrollAnimation5() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".about-div",
-        start: "top center",
-        scrub: 1,
-        
-        
-      }
-    }).fromTo(
-      '.lists',{
-      opacity: 0.5,
-     
-    },
-    {
-      duration: 1,
-      opacity: 1,
-     
-      ease: "power3.inOut",
-      
-    }
-            )
- }}
 }
     
 

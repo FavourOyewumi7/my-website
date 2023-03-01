@@ -1,12 +1,12 @@
 <template>
-    <div class="mt-12 pl-12 pr-12 lg:pr-20 mb-20 ">
-        <h2 class="text-2xl border-b-2 font-bold  work-div">Works</h2>
+    <div class="mt-12 pl-12 pr-12 lg:pr-20 mb-20 work-div">
+        <h2 class="text-2xl border-b-2 font-bold  ">Works</h2>
     
         <div class="flex-col gap-y-5 lg:grid lg:grid-cols-2 lg:gap-8 my-12">
             <WorkCard v-for="project in projects" :key="project.id" :project="project" class="my-12 lg:my-0 work" />
         </div>
 
-        <p class="font-bold service-div"> N.B If you want to know more about my Machine Learning Journey, you can check out my   <a href="https://zindi.africa/users/FavourOyewumi/competitions" target="_blank" class="underline underline-offset-4 decoration-1"> Zindi </a> or <a href="https://www.kaggle.com/favouroyewumi1" target="_blank" class="underline underline-offset-4 decoration-1">Kaggle </a>  accounts</p>
+        <p class="font-bold "> N.B If you want to know more about my Machine Learning Journey, you can check out my   <a href="https://zindi.africa/users/FavourOyewumi/competitions" target="_blank" class="underline underline-offset-4 decoration-1 text-[#0df6fae6]"> Zindi </a> or <a href="https://www.kaggle.com/favouroyewumi1" target="_blank" class="underline underline-offset-4 decoration-1 text-[#e05bb1e6]">Kaggle </a>  accounts</p>
       </div>
 </template>
 
@@ -39,6 +39,42 @@ export default {
           visible:false
         },
         {
+          title:'Weather App',
+          about:'Built a weather app to check the weather for the day and days ahead',
+          imageUrl:'weather-app.jpg',
+          link:'https://weather-app-bice-omega.vercel.app/',
+          tools:['Vue', 'Tailwind','GSAP'],
+          id:8,
+          visible:false  
+        },
+        {
+          title:'Movie Finder',
+          about:'Developed a movie search app, where you can see info about movies',
+          imageUrl:'movie-finder.jpg',
+          link:'https://movie-search-woad.vercel.app/',
+          tools:['Vue', 'Tailwind','Vue Router'],
+          id:9,
+          visible:false  
+        },
+        {
+          title:'Face Recognition App',
+          about:'You cannot see a live app, cause i did not attach a frontend to it, but you can click to go to the github repository',
+          imageUrl:'facerecognition.jpg',
+          link:'https://github.com/FavourOyewumi7/face-recognition-project',
+          tools:['Python', 'OpenCV', 'Machine Learning'],
+          id:6,
+          visible:false
+        },
+        {
+          title:'Machine Learning/Deep Learning Practice',
+          about:'This is me building models, playing with data, participating in ML hackathons',
+          imageUrl:'deeplearning.jpg',
+          link:'https://github.com/FavourOyewumi7/deeplearning',
+          tools:['Python', 'OpenCV', 'Tensorflow', 'Scikit Learn','Pytorch'],
+          id:7,
+          visible:false  
+        },
+        {
           title:'PSF Hub',
           about:'A revamped website for the Pastors Seed Family, a youth arm in my church (not responsive yet, work ongoing)',
           imageUrl:'psfhub.jpg',
@@ -48,21 +84,12 @@ export default {
           visible:true
         },
         {
-          title:'My Portfolio Website',
-          about:'This is the website you are looking at',
-          imageUrl:'newportfolio.jpg',
-          link:'https://favouroyewumi.vercel.app',
-          tools:['Vue', 'Tailwind'],
-          id:4,
-          visible:false
-        },
-        {
           title:'Church Template Design',
           about:'Made a church website design template (not responsive)',
           imageUrl:'daystar-static.jpg',
           link:'https://daystar-lac.vercel.app/ ',
           tools:['HTML', 'CSS', 'JS'],
-          id:5,
+          id:4,
           visible:true
         },
         {
@@ -71,46 +98,9 @@ export default {
           imageUrl:'ohw-static-2.jpg',
           link:'https://favouroyewumi7.github.io/',
           tools:['HTML', 'CSS', 'JS'],
-          id:6,
+          id:5,
           visible:true
         },
-        {
-          title:'Face Recognition App',
-          about:'You cannot see a live app, cause i did not attach a frontend to it, but you can click to go to the github repository',
-          imageUrl:'facerecognition.jpg',
-          link:'https://github.com/FavourOyewumi7/face-recognition-project',
-          tools:['Python', 'OpenCV', 'Machine Learning'],
-          id:7,
-          visible:false
-        },
-        {
-          title:'Machine Learning/Deep Learning Practice',
-          about:'This is me building models, playing with data, participating in ML hackathons',
-          imageUrl:'deeplearning.jpg',
-          link:'https://github.com/FavourOyewumi7/deeplearning',
-          tools:['Python', 'OpenCV', 'Tensorflow', 'Scikit Learn','Pytorch'],
-          id:8,
-          visible:false  
-        },
-        {
-          title:'Weather App',
-          about:'Built a weather app to check the weather for the day and days ahead',
-          imageUrl:'weather-app.jpg',
-          link:'https://weather-app-bice-omega.vercel.app/',
-          tools:['Vue', 'Tailwind','GSAP'],
-          id:9,
-          visible:false  
-        },
-        {
-          title:'Movie Finder',
-          about:'Developed a movie search app, where you can see info about movies',
-          imageUrl:'movie-finder.jpg',
-          link:'https://movie-search-woad.vercel.app/',
-          tools:['Vue', 'Tailwind','Vue Router'],
-          id:10,
-          visible:false  
-        }
-
         
     ]
       }
@@ -120,31 +110,35 @@ export default {
     },
     methods:{
       scrollAnimation0() {
-      gsap.timeline({
-      scrollTrigger: {
-        
-        trigger: ".work-div",
-        start: "top center",
-        scrub:1,
-        pin:true,
-        toggleActions: "restart pause reverse pause"
+        gsap.timeline({
+          scrollTrigger: {
+            trigger: ".work-div",
+            start: "top 80%",
+            end:'bottom center',
+            scrub:1,
+            toggleActions:'none none none none'
        
       }
-    }).fromTo(
+        }).from(
         '.work', {
           opacity: 0,
-          x:"-100%"
-    },
-    {
-      duration: 2,
-      opacity: 1,
-      x:0,
-      ease: "power3.inOut",
+          x:"-100%",
+          stagger:0.5, 
+          
+    })
+    // .to(
+    //   {
+    //   duration: 2,
+    //   opacity: 1,
+    //   x:0,
+    //   stagger: 0.3,
+    //   ease: "power3.inOut",
       
+    // }
+    //)
+  }
     }
-    )
-    }
-}}
+}
 </script>
 
 <style>
