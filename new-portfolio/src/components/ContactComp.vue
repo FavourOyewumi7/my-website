@@ -109,11 +109,11 @@ export default {
       }
     }).fromTo(
       '.lists',{
-      opacity: 0,
+      opacity: 0.5,
      
     },
     {
-      duration: 2,
+      duration: 1,
       opacity: 1,
      
       ease: "power3.inOut",
