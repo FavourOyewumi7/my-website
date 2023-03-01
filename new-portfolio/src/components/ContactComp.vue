@@ -110,12 +110,12 @@ export default {
     }).fromTo(
       '.lists',{
       opacity: 0,
-      y: "-200%",
+     
     },
     {
       duration: 2,
       opacity: 1,
-      y: 0,
+     
       ease: "power3.inOut",
       
     }

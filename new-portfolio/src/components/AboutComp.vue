@@ -33,10 +33,10 @@ export default {
       }}).fromTo(
         '.about', {
           opacity: 0.5,
-            y: "100%",
+            y: "50%",
     },
     {
-      duration: 1.5,
+      duration: 3.5,
       opacity: 1,
       y: 0,
       ease: "power3.inOut",
