@@ -52,7 +52,7 @@ export default {
           about:'Built a weather app to check the weather for the day and days ahead',
           imageUrl:'weather-app.jpg',
           link:'https://weather-app-bice-omega.vercel.app/',
-          tools:['Vue', 'Tailwind','GSAP'],
+          tools:['Vue', 'Tailwind','GSAP','REST'],
           id:8,
           visible:false  
         },
@@ -61,7 +61,7 @@ export default {
           about:'Developed a movie search app, where you can see info about movies',
           imageUrl:'movie-finder.jpg',
           link:'https://movie-search-woad.vercel.app/',
-          tools:['Vue', 'Tailwind','Vue Router'],
+          tools:['Vue', 'Tailwind','Vue Router', 'REST'],
           id:9,
           visible:false  
         },
