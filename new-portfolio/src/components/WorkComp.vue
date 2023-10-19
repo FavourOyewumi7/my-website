@@ -30,6 +30,15 @@ export default {
           visible:false
         },
         {
+          title:'GetLinked Hackathon',
+          about:'A small web app submitted for an online hackathon',
+          imageUrl:'getlinked.png',
+          link:'https://get-linked-solution.vercel.app/',
+          tools:['Vue', 'Tailwind', 'Vue Router','REST'],
+          id:1,
+          visible:false
+        },
+        {
           title:'Todo App',
           about:'My First app while learning Vue, learnt alot of the dynamics of Vue here',
           imageUrl:'todoapp.jpg',
