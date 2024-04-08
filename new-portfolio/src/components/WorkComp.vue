@@ -39,6 +39,15 @@ export default {
           visible:false
         },
         {
+          title:'Landing Page',
+          about:'A landing page done for a client',
+          imageUrl:'contract.png',
+          link:'https://get-linked-solution.vercel.app/',
+          tools:['HTML', 'CSS', 'JS','Bootstrap'],
+          id:13,
+          visible:true
+        },
+        {
           title:'Todo App',
           about:'My First app while learning Vue, learnt alot of the dynamics of Vue here',
           imageUrl:'todoapp.jpg',
