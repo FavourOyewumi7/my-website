@@ -24,7 +24,7 @@ export default {
           title:'Crypto Library',
           about:'A web library where you can learn everything from cryptocurrency to Web3',
           imageUrl:'cryptolib.jpg',
-          link:'',
+          link:'https://crypto-library-hsyx-9sal2pqj2-esscapeplans-projects.vercel.app/',
           tools:['Vue', 'Tailwind', 'Vue Router'],
           id:1,
           visible:false
@@ -42,7 +42,7 @@ export default {
           title:'Landing Page',
           about:'A landing page done for a client',
           imageUrl:'contract.png',
-          link:'https://get-linked-solution.vercel.app/',
+          link:'https://contract-project-wine.vercel.app/',
           tools:['HTML', 'CSS', 'JS','Bootstrap'],
           id:13,
           visible:true
