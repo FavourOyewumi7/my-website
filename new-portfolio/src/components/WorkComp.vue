@@ -39,6 +39,15 @@ export default {
           visible:false
         },
         {
+          title:'Image Gallery',
+          about:'A small web app for searching for images using the Unsplash API',
+          imageUrl:'cowrywise-imageapp.png',
+          link:'https://cowrywise-task.vercel.app/',
+          tools:['Vue', 'Tailwind', 'Vue Router','REST'],
+          id:100,
+          visible:false
+        },
+        {
           title:'Landing Page',
           about:'A landing page done for a client',
           imageUrl:'contract.png',
@@ -131,13 +140,14 @@ export default {
         gsap.timeline({
           scrollTrigger: {
             trigger: ".work-div",
-            start: "top 80%",
+            start: "top 100%",
             end:'bottom center',
             scrub:1,
             toggleActions:'none none none none'
        
       }
-        }).from(
+        })
+        .from(
         '.work', {
           opacity: 0,
           x:"-100%",

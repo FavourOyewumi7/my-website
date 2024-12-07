@@ -69,11 +69,11 @@ export default {
       }}).fromTo(
         '.serv-1', {
           opacity: 0,
-          stagger:0.4,
-            y: "-100%",
+          stagger:0.2,
+            y: "-30%",
             
     },{
-      duration: 2,
+      duration: 1.5,
       opacity: 1,
       y: 0,
       ease: "power3.inOut",

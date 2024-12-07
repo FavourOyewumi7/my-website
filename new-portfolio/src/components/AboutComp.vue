@@ -25,8 +25,8 @@ export default {
       scrollAnimation4() {
       gsap.from(
         '.about', {
-          opacity: 0.3,
-            y: "-50%",
+          opacity: 0.5,
+            y: "-20%",
             scrollTrigger: {
         trigger: ".about-div",
         start: "top 80%", 
