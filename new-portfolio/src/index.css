@@ -1,3 +1,81 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* ---- Design tokens (RGB channels so Tailwind opacity utilities work) ---- */
+  :root {
+    --canvas: 245 244 239; /* warm off-white paper */
+    --surface: 255 255 255;
+    --ink: 20 20 15; /* near-black */
+    --muted: 119 116 107; /* warm gray */
+    --hairline: 226 223 214;
+    --accent: 194 87 58; /* terracotta — warm but muted */
+  }
+
+  .dark {
+    --canvas: 12 12 13; /* near-black */
+    --surface: 22 22 24;
+    --ink: 242 241 236;
+    --muted: 154 152 143;
+    --hairline: 38 38 42;
+    --accent: 219 126 96; /* terracotta, lifted for dark bg */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    @apply bg-canvas text-ink font-sans;
+  }
+
+  ::selection {
+    background: rgb(var(--accent) / 0.2);
+    color: rgb(var(--ink));
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: rgb(var(--canvas));
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(var(--muted) / 0.4);
+    border-radius: 9999px;
+    border: 3px solid rgb(var(--canvas));
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(var(--accent) / 0.6);
+  }
+}
+
+@layer components {
+  /* Shared page container */
+  .wrap {
+    @apply mx-auto w-full max-w-content px-6 sm:px-8 lg:px-12;
+  }
+
+  /* Small uppercase editorial section label */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-label text-muted;
+  }
+
+  /* Animated underline link (grows from left on hover) */
+  .link-underline {
+    @apply relative inline-block transition-colors duration-300 hover:text-accent;
+  }
+  .link-underline::after {
+    content: "";
+    @apply absolute -bottom-0.5 left-0 h-px w-full origin-right scale-x-0 bg-accent transition-transform duration-300 ease-out-expo;
+  }
+  .link-underline:hover::after {
+    @apply origin-left scale-x-100;
+  }
+}

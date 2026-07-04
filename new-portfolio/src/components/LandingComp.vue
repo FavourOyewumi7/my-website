@@ -1,106 +1,87 @@
 <template>
-  <div class="my-16 pl-12 pr-12 lg:pr-20  dark:text-gray-200">
-    <div class="xl:grid xl:grid-cols-4 block ">
-      <h1 class="text-6xl lg:text-8xl col-span-3 main-text">
-        Hello, <br>
-        I'm Favour Oyewumi - a curious 
-        software engineer based in 
-        Lagos, Nigeria.
-      </h1>
+  <section
+    class="wrap flex min-h-[calc(100vh-5rem)] flex-col justify-center py-20"
+  >
+    <p class="eyebrow hero-el">
+      <span class="inline-flex h-2 w-2 rounded-full bg-accent"></span>
+      Site Reliability Engineer · Moniepoint
+    </p>
+
+    <h1
+      class="hero-el mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
+    >
+      I keep systems <span class="text-accent">reliable</span> —<br class="hidden sm:block" />
+      and never stopped building.
+    </h1>
+
+    <p class="hero-el mt-8 max-w-2xl text-lg leading-relaxed text-muted">
+      I'm Favour Oyewumi, a Site Reliability Engineer at Moniepoint in Lagos,
+      Nigeria. I keep the systems behind one of Africa's fastest-growing
+      fintechs fast and dependable — and off the clock, I build for the web and
+      train machine-learning models.
+    </p>
+
+    <div class="hero-el mt-10 flex flex-wrap items-center gap-4">
+      <a
+        href="#works"
+        class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity duration-300 hover:opacity-90"
+      >
+        View my work
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">
+          <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 0 1 1.414 0l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L14.586 11H3a1 1 0 1 1 0-2h11.586l-4.293-4.293a1 1 0 0 1 0-1.414Z" clip-rule="evenodd" />
+        </svg>
+      </a>
+      <a
+        href="#contact"
+        class="inline-flex items-center rounded-full border border-hairline px-6 py-3 text-sm font-medium transition-colors duration-300 hover:border-accent hover:text-accent"
+      >
+        Get in touch
+      </a>
     </div>
 
-    <div class="py-8 list">
-      <ul class="flex">
-        <li class="pr-5 cursor-pointer link" > 
-          <a href="https://www.github.com/FavourOyewumi7" target="_blank"> 
-              Github 
-          </a>
-        </li>
-
-
-        <li class="px-5 cursor-pointer link" >
-            <a href="https://www.linkedin.com/in/favour-o-3610731a6/" target="_blank"> 
-                LinkedIn 
-            </a>
-        </li>
-
-
-        <li class="px-5 cursor-pointer link" >
-            <a href="https://twitter.com/ayomideif" target="_blank"> 
-                Twitter 
-            </a>
-        </li>
-
-
-        <li class="px-5 cursor-pointer link" >
-            <a href="mailto:oyewumifavour65@gmail.com" target="_blank">
-                Email 
-            </a>
-        </li>
-
-
-        <li class="px-5 cursor-pointer link" >
-            <a href="https://instagram.com/ayomideof" target="_blank">
-                Instagram 
-            </a>
-        </li>
-      </ul>
-    </div>
-
-
-  </div>
+    <ul class="hero-el mt-14 flex flex-wrap gap-x-6 gap-y-3 text-sm">
+      <li v-for="social in socials" :key="social.label">
+        <a
+          :href="social.href"
+          :target="social.href.startsWith('mailto:') ? undefined : '_blank'"
+          rel="noopener"
+          class="link-underline text-muted"
+        >
+          {{ social.label }}
+        </a>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <script>
-import {gsap} from 'gsap'
+import { gsap } from 'gsap';
 
 export default {
-    name: 'LandingComp',
-    mounted(){
-      gsap.fromTo(
-        '.main-text', {
-          
-          opacity: 0,
-      y: "-50%",
-    },
-    {
-      duration: 2,
-      opacity: 1,
-      y: 0,
-      ease: "power3.inOut",
-      
-    }
-    )
-
-
-      gsap.fromTo(
-      '.list',{
-      
-      opacity: 0,
-      y: "100%",
-    },
-    {
-      duration: 2,
-      opacity: 1,
-      y: 0,
-      ease: "power3.inOut",
-      
-    }
-            )
-    }
-}
+  name: 'LandingComp',
+  data() {
+    return {
+      socials: [
+        { label: 'GitHub', href: 'https://github.com/FavourOyewumi7' },
+        { label: 'LinkedIn', href: 'https://www.linkedin.com/in/favour-o-3610731a6/' },
+        { label: 'X', href: 'https://x.com/ayomideif' },
+        { label: 'Instagram', href: 'https://instagram.com/ayomideof' },
+        { label: 'Email', href: 'mailto:oyewumifavour65@gmail.com' },
+      ],
+    };
+  },
+  mounted() {
+    gsap.fromTo(
+      '.hero-el',
+      { opacity: 0, y: 24 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.9,
+        stagger: 0.12,
+        ease: 'power3.out',
+      }
+    );
+  },
+};
 </script>
-
-<style scoped>
-.link{
-  background: linear-gradient(to left, transparent 50%, rgba(224, 91, 177, 0.3) 50%) right;
-  background-size: 200%;
-  transition: .5s ease-out;
-  cursor: pointer;
- }
- .link:hover{
-    background-position: left;
-    font-weight: bold;
- }
-
-</style>>
