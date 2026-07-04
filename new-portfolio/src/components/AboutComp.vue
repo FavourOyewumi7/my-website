@@ -34,6 +34,7 @@
           cooking video, or lost in a game. I'm at my best learning something new
           and building things that are genuinely useful — and a little bit
           delightful.
+          
         </p>
       </div>
 
