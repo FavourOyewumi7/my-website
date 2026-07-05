@@ -1,11 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import './index.css'
-import { inject } from '@vercel/analytics'
 import { injectSpeedInsights } from '@vercel/speed-insights'
 
-// Vercel Web Analytics + Speed Insights (only report when deployed on Vercel)
-inject()
+// Web Analytics is wired via <Analytics /> in App.vue.
+// Speed Insights reports only when deployed on Vercel.
 injectSpeedInsights()
 
 createApp(App).mount('#app')

@@ -1,4 +1,5 @@
 <template>
+  <Analytics />
   <div id="app" class="min-h-screen bg-canvas text-ink antialiased">
     <NavBar :is-dark="darkMode" @toggle-theme="toggleTheme" />
     <main>
@@ -20,6 +21,7 @@ import ServicesComp from './components/ServicesComp.vue';
 import AboutComp from './components/AboutComp.vue';
 import ContactComp from './components/ContactComp.vue';
 import FooterBar from './components/FooterBar.vue';
+import { Analytics } from '@vercel/analytics/vue';
 
 export default {
   name: 'App',
@@ -31,6 +33,7 @@ export default {
     AboutComp,
     ContactComp,
     FooterBar,
+    Analytics,
   },
   data() {
     return {
