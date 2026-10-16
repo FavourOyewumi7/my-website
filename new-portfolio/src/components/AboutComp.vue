@@ -45,6 +45,11 @@
       </div>
 
       <aside class="about space-y-8">
+        <img
+          :src="avatarUrl"
+          alt="Portrait of Favour wearing glasses and a green headwrap"
+          class="h-40 w-40 rounded-full border border-hairline bg-surface object-cover"
+        />
         <div v-for="fact in facts" :key="fact.label">
           <p class="text-xs font-medium uppercase tracking-label text-muted">
             {{ fact.label }}
@@ -65,6 +70,7 @@ export default {
   name: 'AboutComp',
   data() {
     return {
+      avatarUrl: `${process.env.BASE_URL}avatar.png`,
       facts: [
         { label: 'Now', value: 'Site Reliability Engineer @ Moniepoint' },
         { label: 'Location', value: 'Lagos, Nigeria' },
