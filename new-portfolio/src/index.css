@@ -5,21 +5,21 @@
 @layer base {
   /* ---- Design tokens (RGB channels so Tailwind opacity utilities work) ---- */
   :root {
-    --canvas: 245 244 239; /* warm off-white paper */
+    --canvas: 250 250 250; /* bright grey */
     --surface: 255 255 255;
-    --ink: 20 20 15; /* near-black */
-    --muted: 119 116 107; /* warm gray */
-    --hairline: 226 223 214;
-    --accent: 194 87 58; /* terracotta — warm but muted */
+    --ink: 20 20 21; /* near-black */
+    --muted: 113 113 118; /* mid grey */
+    --hairline: 228 228 231;
+    --accent: 140 140 146; /* neutral grey highlight */
   }
 
   .dark {
-    --canvas: 12 12 13; /* near-black */
-    --surface: 22 22 24;
-    --ink: 242 241 236;
-    --muted: 154 152 143;
-    --hairline: 38 38 42;
-    --accent: 219 126 96; /* terracotta, lifted for dark bg */
+    --canvas: 14 14 15; /* black */
+    --surface: 24 24 26;
+    --ink: 237 237 239; /* bright grey */
+    --muted: 152 152 158;
+    --hairline: 42 42 46;
+    --accent: 120 120 126;
   }
 
   html {
@@ -64,7 +64,7 @@
 
   /* Small uppercase editorial section label */
   .eyebrow {
-    @apply inline-flex items-center gap-2 text-xs font-medium uppercase tracking-label text-muted;
+    @apply inline-flex items-center gap-2 font-mono text-xs font-medium uppercase tracking-label text-muted;
   }
 
   /* Animated underline link (grows from left on hover) */

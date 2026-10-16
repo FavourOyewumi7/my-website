@@ -24,7 +24,7 @@
     <div class="hero-el mt-10 flex flex-wrap items-center gap-4">
       <a
         href="#works"
-        class="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 text-sm font-medium text-white transition-opacity duration-300 hover:opacity-90"
+        class="inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-canvas transition-opacity duration-300 hover:opacity-90"
       >
         View my work
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">

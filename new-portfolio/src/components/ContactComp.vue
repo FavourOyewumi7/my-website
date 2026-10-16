@@ -17,7 +17,7 @@
     <div class="contact-el mt-10">
       <a
         href="mailto:oyewumifavour65@gmail.com"
-        class="inline-flex items-center gap-3 rounded-full bg-accent px-7 py-3.5 text-sm font-medium text-white transition-opacity duration-300 hover:opacity-90"
+        class="inline-flex items-center gap-3 rounded-full bg-ink px-7 py-3.5 text-sm font-medium text-canvas transition-opacity duration-300 hover:opacity-90"
       >
         oyewumifavour65@gmail.com
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-4 w-4">

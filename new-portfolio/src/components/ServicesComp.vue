@@ -21,7 +21,7 @@
         :key="service.number"
         class="serv-1 border-t border-hairline pt-6"
       >
-        <span class="font-display text-sm font-medium text-accent">{{ service.number }}</span>
+        <span class="font-mono text-sm font-medium text-accent">{{ service.number }}</span>
         <h3 class="mt-3 font-display text-xl font-semibold tracking-tight">
           {{ service.title }}
         </h3>

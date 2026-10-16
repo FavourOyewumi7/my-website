@@ -17,8 +17,9 @@ module.exports = {
         accent: "rgb(var(--accent) / <alpha-value>)",
       },
       fontFamily: {
-        display: ['"Space Grotesk"', "ui-sans-serif", "system-ui", "sans-serif"],
-        sans: ['"Inter"', "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ['"Albert Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ['"Albert Sans"', "ui-sans-serif", "system-ui", "sans-serif"],
+        mono: ['"Geist Mono"', "ui-monospace", "SFMono-Regular", "monospace"],
       },
       maxWidth: {
         content: "72rem", // shared page container width

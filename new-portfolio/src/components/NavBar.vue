@@ -14,6 +14,7 @@
 
       <!-- Desktop links -->
       <div class="hidden items-center gap-8 md:flex">
+        <NowPlaying />
         <a
           v-for="item in links"
           :key="item.href"
@@ -126,6 +127,7 @@
     <transition name="menu">
       <div v-if="menuOpen" class="border-t border-hairline/70 md:hidden">
         <div class="wrap flex flex-col py-4">
+          <NowPlaying class="mb-2 self-start" />
           <a
             v-for="item in links"
             :key="item.href"
@@ -151,8 +153,11 @@
 </template>
 
 <script>
+import NowPlaying from './NowPlaying.vue';
+
 export default {
   name: 'NavBar',
+  components: { NowPlaying },
   props: {
     isDark: { type: Boolean, default: false },
   },
