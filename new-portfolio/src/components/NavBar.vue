@@ -169,6 +169,7 @@ export default {
         'https://drive.google.com/drive/folders/1566eOzngy9zmjbWqCDHn6DSXVfujh22s?usp=sharing',
       links: [
         { label: 'Work', href: '#works' },
+        { label: 'Writing', href: '#writing' },
         { label: 'About', href: '#about' },
         { label: 'Contact', href: '#contact' },
       ],

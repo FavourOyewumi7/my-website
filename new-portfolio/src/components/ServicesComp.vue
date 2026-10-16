@@ -4,7 +4,7 @@
       class="flex flex-col gap-4 border-b border-hairline pb-6 md:flex-row md:items-end md:justify-between"
     >
       <div>
-        <p class="eyebrow">02 — Expertise</p>
+        <p class="eyebrow">03 — Expertise</p>
         <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
           What I do
         </h2>
@@ -42,22 +42,22 @@ export default {
     return {
       services: [
         {
-          number: '01',
+          number: 'I',
           title: 'Site Reliability',
           body: 'Keeping services fast, observable and resilient — the automation, monitoring and calm incident response that keep systems running when it matters most.',
         },
         {
-          number: '02',
+          number: 'II',
           title: 'Software Engineering',
           body: 'Building clean, responsive front-ends with Vue and Tailwind, and the APIs behind them — readable code that’s built to last.',
         },
         {
-          number: '03',
+          number: 'III',
           title: 'Machine Learning',
           body: 'Computer-vision models for face recognition and mask detection with Keras and transfer learning, plus a competitive streak on Zindi and with Data Science Nigeria.',
         },
         {
-          number: '04',
+          number: 'IV',
           title: 'Problem Solving',
           body: '350+ problems solved across LeetCode and HackerRank — a habit of reasoning toward efficient, correct solutions in both time and space.',
         },

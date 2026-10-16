@@ -1,7 +1,7 @@
 <template>
   <section class="wrap scroll-mt-24 py-20 md:py-28 about-div">
     <header class="border-b border-hairline pb-6">
-      <p class="eyebrow">03 — About</p>
+      <p class="eyebrow">04 — About</p>
       <h2 class="mt-3 font-display text-3xl font-semibold tracking-tight sm:text-4xl">
         A bit about me
       </h2>
@@ -16,25 +16,31 @@
           people depend on stay up when it matters most.
         </p>
         <p>
-          I came to reliability through building. I've spent years crafting
-          front-ends with <span class="text-ink">Vue and Tailwind</span>, and
-          that builder's instinct still shapes how I think about systems —
-          clearly, and with the person on the other end in mind.
+          Lately, I've been drawn to the problems behind
+          <span class="text-ink">distributed systems</span>: how services
+          coordinate, scale, and keep working when parts fail. I'm keen to
+          explore that space further, with <span class="text-ink">Go</span> next
+          on my learning list.
         </p>
         <p>
-          Somewhere along the way I fell for
-          <span class="text-ink">machine learning</span> too. I've trained models
-          to recognise faces and detect face masks, scraped and wrangled my own
-          datasets, and put my skills to the test in
-          <span class="text-ink">Zindi and Data Science Nigeria</span>
-          competitions.
+          Before finding my groove in reliability, I spent years building
+          front-ends with <span class="text-ink">Vue and Tailwind</span>. These
+          days, web development is more of a conversation topic than a side
+          project — but that builder's instinct still shapes how I think about
+          systems.
         </p>
         <p>
-          Away from the screen, you'll find me outdoors, deep in a good meal or a
-          cooking video, or lost in a game. I'm at my best learning something new
-          and building things that are genuinely useful — and a little bit
-          delightful.
-          
+          I also spent time exploring
+          <span class="text-ink">machine learning</span> — training models,
+          wrangling datasets, and taking on competitions with
+          <span class="text-ink">Zindi and Data Science Nigeria</span>. I'm not
+          building models these days, but I still enjoy keeping up and talking
+          shop.
+        </p>
+        <p>
+          Off the clock, there's usually music on — and sometimes I'm behind a
+          drum kit. I'm also a retired photographer, which means I still
+          appreciate a good shot without having to carry all the gear.
         </p>
       </div>
 
@@ -62,8 +68,9 @@ export default {
       facts: [
         { label: 'Now', value: 'Site Reliability Engineer @ Moniepoint' },
         { label: 'Location', value: 'Lagos, Nigeria' },
-        { label: 'Focus', value: 'Reliability, software & machine learning' },
-        { label: 'Toolkit', value: 'Vue · JavaScript · Tailwind · Python · Keras' },
+        { label: 'Exploring', value: 'Go · Distributed systems' },
+        { label: 'Interests', value: 'Reliability, music, web & machine learning' },
+        { label: 'Toolkit', value: 'Go (learning) · Vue · JavaScript · Tailwind · Python · Keras' },
         { label: 'Community', value: 'Zindi · Data Science Nigeria' },
       ],
     };

@@ -10,15 +10,15 @@
     <h1
       class="hero-el mt-8 max-w-4xl font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl"
     >
-      I keep systems <span class="text-accent">reliable</span> —<br class="hidden sm:block" />
-      and never stopped building.
+      I build and maintain <span class="text-accent">reliable software.</span>
     </h1>
 
     <p class="hero-el mt-8 max-w-2xl text-lg leading-relaxed text-muted">
       I'm Favour Oyewumi, a Site Reliability Engineer at Moniepoint in Lagos,
-      Nigeria. I keep the systems behind one of Africa's fastest-growing
-      fintechs fast and dependable — and off the clock, I build for the web and
-      train machine-learning models.
+      Nigeria. Web development and machine learning still make for great
+      conversation; these days, I'm more of an enthusiastic spectator. Off the
+      clock, you'll find me listening to music, playing drums, or being a
+      retired photographer.
     </p>
 
     <div class="hero-el mt-10 flex flex-wrap items-center gap-4">

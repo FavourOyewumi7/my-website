@@ -5,6 +5,7 @@
     <main>
       <LandingComp />
       <WorkComp id="works" />
+      <WritingComp id="writing" />
       <ServicesComp id="services" />
       <AboutComp id="about" />
       <ContactComp id="contact" />
@@ -17,6 +18,7 @@
 import NavBar from './components/NavBar.vue';
 import LandingComp from './components/LandingComp.vue';
 import WorkComp from './components/WorkComp.vue';
+import WritingComp from './components/WritingComp.vue';
 import ServicesComp from './components/ServicesComp.vue';
 import AboutComp from './components/AboutComp.vue';
 import ContactComp from './components/ContactComp.vue';
@@ -29,6 +31,7 @@ export default {
     NavBar,
     LandingComp,
     WorkComp,
+    WritingComp,
     ServicesComp,
     AboutComp,
     ContactComp,

@@ -1,6 +1,6 @@
 <template>
   <section class="wrap scroll-mt-24 py-20 md:py-28 contact-div">
-    <p class="eyebrow contact-el">04 — Contact</p>
+    <p class="eyebrow contact-el">05 — Contact</p>
 
     <h2
       class="contact-el mt-6 font-display text-5xl font-semibold leading-[1.02] tracking-tight sm:text-7xl lg:text-8xl"
